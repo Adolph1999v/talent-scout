@@ -1,6 +1,6 @@
 # 🎯 AI Talent Scout
 
-> AI-powered talent scouting and engagement agent — built for the Catalyst Hackathon by Deccan AI.
+> AI-powered talent scouting and engagement agent
 
 🌐 **Live Demo:** https://talentscout-nine.vercel.app
 ⚙️ **API:** https://adolphvijay-talent-scout-api.hf.space/health
@@ -14,15 +14,8 @@
 
 ## Architecture
 
-JD Input
-→ Groq (Llama 3.3 70B) parses JD into structured requirements
-→ sentence-transformers embeds JD into vector
-→ FAISS retrieves top-K semantically matching candidates  ← RAG
-→ Groq explains WHY each candidate matches (explainability)
-→ Groq simulates recruiter ↔ candidate conversation
-→ Groq scores genuine interest from conversation
-→ Combined score = 60% Match + 40% Interest
-→ Ranked shortlist returned to recruiter
+<img width="550" height="600" alt="image" src="https://github.com/user-attachments/assets/01518dcd-48fd-4413-91b5-caad15ee3f4b" />
+
 
 ## Tech Stack
 | Layer | Technology |
