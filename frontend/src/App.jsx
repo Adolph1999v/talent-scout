@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const API = "https://talent-scout-api.onrender.com";
+const API = "https://adolphvijay-talent-scout-api.hf.space";
 
 // Design tokens
 const C = {
