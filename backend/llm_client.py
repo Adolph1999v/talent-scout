@@ -12,10 +12,10 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 # Models ordered: fastest/most-limited → slowest/most-available
 # Each has different rate limits on Groq's free tier
 MODELS = [
-    "llama-3.3-70b-versatile",    # primary — best quality
-    "llama-3.1-8b-instant",       # fallback 1 — very fast, higher limits
-    "gemma2-9b-it",               # fallback 2 — Google's model on Groq
-    "mixtral-8x7b-32768",         # fallback 3 — Mixtral, large context
+    "llama-3.3-70b-versatile",
+    "llama-3.1-8b-instant",
+    "llama3-70b-8192",
+    "mixtral-8x7b-32768",
 ]
 
 
