@@ -5,8 +5,6 @@ groq
 faiss-cpu
 sentence-transformers==2.7.0
 numpy<2
-torch==2.2.2
 pydantic
 python-multipart
 pypdf2
-google-genai
