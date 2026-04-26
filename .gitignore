@@ -1,0 +1,28 @@
+# Secrets — catches .env anywhere in the project
+.env
+**/.env
+backend/.env
+frontend/.env
+
+# Python virtual environment
+venv/
+backend/venv/
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# Node
+node_modules/
+**/node_modules/
+frontend/dist/
+frontend/build/
+
+# OS
+.DS_Store
+**/.DS_Store
+
+# Project specific
+faiss_index.bin
+uploaded_candidates.json
+*.log
