@@ -2,6 +2,9 @@
 
 > AI-powered talent scouting and engagement agent — built for the Catalyst Hackathon by Deccan AI.
 
+🌐 **Live Demo:** https://talentscout-nine.vercel.app
+⚙️ **API:** https://adolphvijay-talent-scout-api.hf.space/health
+
 ## What it does
 - Takes a **Job Description** as input
 - Discovers matching candidates using **RAG** (FAISS + sentence-transformers)
@@ -28,7 +31,7 @@ JD Input
 | LLM | Groq — Llama 3.3 70B (free tier) with 4-model fallback chain |
 | Vector Search | FAISS (Meta) + sentence-transformers |
 | Frontend | React + Vite |
-| Deployment | Render (backend) + Vercel (frontend) |
+| Deployment | HuggingFace Spaces (backend) + Vercel (frontend) |
 
 ## Scoring Logic
 - **Match Score** — RAG cosine similarity + Groq semantic skill analysis + experience fit
@@ -72,8 +75,7 @@ Open **http://localhost:5173**
 Upload any PDF or .txt resume — Groq parses it and indexes it into FAISS live.
 The candidate is immediately included in the next JD search.
 
-> Note: Uploaded candidates live in memory and reset on server restart.
-> Production version would persist to PostgreSQL + pgvector.
+Uploaded CVs are held in memory for the duration of the server session and cleared on restart. This is intentional for the prototype — in production, we'd use a proper database with user-scoped storage so each recruiter sees only their own uploaded candidates.
 
 ## Future Plans
 - Persistent storage with PostgreSQL + pgvector
